@@ -24,7 +24,7 @@ In the top of the library resides the `manifest.json` file which has the followi
 ```json
 {
   "provides" : "my_lib",
-  "execs" : [],
+  "exec" : [],
   "targets" : {
     "macos-x64" : {
       "linkflags" : [],
@@ -35,7 +35,7 @@ In the top of the library resides the `manifest.json` file which has the followi
       "linkflags" : ["/stack:65536"],
       "dependencies" : ["ms_my_extra"],
       "linked-libs" : ["my_lib_static", "kernel32"],
-      "execs" : [],
+      "exec" : [],
     }
   }
 }
